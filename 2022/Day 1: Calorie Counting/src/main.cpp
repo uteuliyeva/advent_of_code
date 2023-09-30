@@ -9,7 +9,7 @@ int main()
     // Read the input data
     std::ifstream inputFile("../adventofcode.com_2022_day_1_input.txt"); 
     if (!inputFile) {  
-        std::cerr << "Unable to open file numbers.txt" << std::endl;
+        std::cerr << "Unable to open the input file" << std::endl;
         return 1;  
     }
 
@@ -40,7 +40,7 @@ int main()
     // Reset read position to the beginning of the file
     inputFile.clear();
     inputFile.seekg(0, std::ios::beg);
-    
+
     while(getline(inputFile,line))
     {
         std::stringstream ss(line);
@@ -58,6 +58,7 @@ int main()
     }
 
     int sumThreeMaxCalories = threeMaxCalories[0]+threeMaxCalories[1]+threeMaxCalories[2];
+    
     std::cout<<"Answer #1: "<< maxCalories <<std::endl;
     std::cout<<"Answer #2: "<< sumThreeMaxCalories << std::endl;
     return 0;
