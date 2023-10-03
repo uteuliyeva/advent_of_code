@@ -146,7 +146,7 @@ int main() {
         // Parse the line
         iss>>word>>numCrates>>word>>fromStack>>word>>toStack;
 
-        //Implement moves
+        //Implement moves: First push the crates to a temporary stack and then from temporary stack to toStack
         std::stack<char> temp_stack;
         for (int i=0; i<numCrates; i++)
         {
