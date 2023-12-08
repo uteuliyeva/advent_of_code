@@ -81,7 +81,7 @@ int getGearRatio(std::vector<std::string>& grid, const int& i, const int& j)
 int main()
 {
     // Read the input file
-    std::fstream inputFile("../input.txt");
+    std::fstream inputFile("../input_test.txt");
     if(!inputFile)
     {
         std::cerr<<"Unable to read the input file";
