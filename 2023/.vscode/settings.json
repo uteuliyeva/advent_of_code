@@ -68,6 +68,7 @@
         "algorithm": "cpp",
         "regex": "cpp",
         "unordered_set": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "set": "cpp"
     }
 }
